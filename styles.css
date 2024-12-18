@@ -62,7 +62,7 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: flex-end;
     height: 100vh;
-    background-image: url("Images/back2.avif");
+    background-image: url("back2.avif");
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -416,6 +416,153 @@ nav ul li a:hover {
 
     .contact-form, .contact-info {
         width: 80%;
+    }
+}
+/* General Responsive Section Styling */
+section {
+    width: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+/* Hero Section (Home) */
+.hero-section {
+    flex-direction: column; /* Stack content on smaller devices */
+    padding: 10% 5% 5%;
+}
+
+.hero-section .text-content {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.2rem;
+}
+
+.image-container img, .asd {
+    width: 250px;
+    bottom: 5%; /* Adjust positioning for smaller screens */
+}
+
+/* About Section */
+.about-container {
+    flex-direction: column; /* Stack content on smaller devices */
+}
+
+.about-image {
+    margin-bottom: 20px;
+}
+
+.about-content {
+    width: 90%; /* Take up full width for smaller devices */
+    text-align: center; /* Center-align text for smaller screens */
+}
+
+/* Projects Section */
+.projects-container {
+    flex-direction: column; /* Stack project boxes on smaller devices */
+    gap: 20px;
+}
+
+.project-box {
+    width: 90%; /* Full width for smaller screens */
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-container {
+    flex-direction: column; /* Stack contact form and info */
+    align-items: center;
+}
+
+.contact-form, .contact-info {
+    width: 90%; /* Full width for smaller screens */
+}
+
+/* Navigation Bar */
+nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+    text-align: center;
+}
+
+nav ul li {
+    margin: 10px 0; /* Add spacing between items */
+}
+
+nav h1 {
+    margin-right: 0; /* Center the logo/title */
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .hero-section .text-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .projects-container {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .project-box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        font-size: 1rem;
+    }
+
+    .image-container img, .asd {
+        width: 200px;
+        bottom: 5%;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .project-box {
+        width: 100%;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    #go-to-top {
+        font-size: 1rem;
+        padding: 8px 10px;
     }
 }
 
