@@ -406,23 +406,9 @@ nav ul li a:hover {
 #go-to-top:hover {
     background-color: #0097a7;
 }
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-form, .contact-info {
-        width: 80%;
-    }
-}
-
-/* Media Queries */
 @media (max-width: 1024px) {
     .hero-section .text-content h1 {
-        font-size: 5.5rem;
+        font-size: 2.5rem;
     }
     
     .projects-container {
@@ -487,6 +473,17 @@ nav ul li a:hover {
     #go-to-top {
         font-size: 1rem;
         padding: 8px 10px;
+    }
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .contact-info {
+        width: 80%;
     }
 }
 
